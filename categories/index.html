@@ -190,16 +190,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-jotting">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            随笔
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
@@ -236,6 +226,16 @@
               <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
             
             日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jotting">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />
+            
+            随笔
           </a>
         </li>
       
@@ -302,6 +302,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -437,6 +444,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">SuperGintoki</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1.1k</span>
   
 </div>
 
@@ -595,6 +611,43 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'SuperGintoki',
+            repo: 'SuperGintoki.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'b522845f301bab8ec33a5202f3acf614e4335206',
+            
+                client_id: 'fee8528afdb3a9d1852b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
