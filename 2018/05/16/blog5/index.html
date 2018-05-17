@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="HTML,前端,frontEnd," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="HTML5分为根元素，元数据元素，脚本元素。根元素：doctype，html元数据元素：head,title,base,link,meta,style脚本元素：script,noscript  根元素  文档类型声明&amp;lt;!DOCTYPE HTML&amp;gt; 是HTML5标准的文档类型声明，他告诉浏览器本文档是HTML文档，HTML的版本号是HTNL5. HTML是根元素，表示文档的开始，包括he">
+<meta name="keywords" content="HTML,前端,frontEnd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML的元数据元素">
+<meta property="og:url" content="https://supergintoki.github.io/2018/05/16/blog5/index.html">
+<meta property="og:site_name" content="SUPERGINTOKI&#39;S BLOG">
+<meta property="og:description" content="HTML5分为根元素，元数据元素，脚本元素。根元素：doctype，html元数据元素：head,title,base,link,meta,style脚本元素：script,noscript  根元素  文档类型声明&amp;lt;!DOCTYPE HTML&amp;gt; 是HTML5标准的文档类型声明，他告诉浏览器本文档是HTML文档，HTML的版本号是HTNL5. HTML是根元素，表示文档的开始，包括he">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-17T04:57:20.765Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML的元数据元素">
+<meta name="twitter:description" content="HTML5分为根元素，元数据元素，脚本元素。根元素：doctype，html元数据元素：head,title,base,link,meta,style脚本元素：script,noscript  根元素  文档类型声明&amp;lt;!DOCTYPE HTML&amp;gt; 是HTML5标准的文档类型声明，他告诉浏览器本文档是HTML文档，HTML的版本号是HTNL5. HTML是根元素，表示文档的开始，包括he">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://supergintoki.github.io/2018/05/16/blog5/"/>
+
+
+
+
+
+  <title>HTML的元数据元素 | SUPERGINTOKI'S BLOG</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">SUPERGINTOKI'S BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">屠龙的少年</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-jotting">
+          <a href="/jotting/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />
+            
+            随笔
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://supergintoki.github.io/2018/05/16/blog5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SuperGintoki">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SUPERGINTOKI'S BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML的元数据元素</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-16T12:20:26+08:00">
+                2018-05-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/16/blog5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/16/blog5/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,611
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>HTML5分为根元素，元数据元素，脚本元素。<br><br>根元素：doctype，html<br>元数据元素：head,title,base,link,meta,style<br>脚本元素：script,noscript</p>
+<hr>
+<p><strong>根元素</strong></p>
+<ol>
+<li>文档类型声明<br>&lt;!DOCTYPE HTML&gt; 是HTML5标准的文档类型声明，他告诉浏览器本文档是HTML文档，HTML的版本号是HTNL5.</li>
+<li>HTML是根元素，表示文档的开始，包括head和body两个子元素，如需指定语言，设置lang属性即可。<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-CN"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>html<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="元数据"><a href="#元数据" class="headerlink" title="元数据"></a>元数据</h2><p>head元素下面所包含的元素有title、base、meta、link、style、script、noscript。其中title是必不可缺的。</p>
+<h3 id="meta"><a href="#meta" class="headerlink" title="meta"></a>meta</h3><p>Meta标签是HTML语言中HEAD区的一个辅助性标签，它位于HTML文档头部的<head>标记 和<title>标记之间，它提供用户不可见的信息。META标签有两个重要的属性：HTTP标题信息(HTTP-EQUIV)和页面描述信息(name)。</title></head></p>
+<h4 id="Meta标签的name和content属性"><a href="#Meta标签的name和content属性" class="headerlink" title="Meta标签的name和content属性"></a>Meta标签的name和content属性</h4><p><strong>Meta标签的name属性语法格式：＜meta name=”参数” content=”具体参数值”＞</strong><br>meta元素，用老定义文档的元数据，即各种数据的数据，其中name是属性名，content是</p>
+<ol>
+<li><p>Keywords (关键字)<br>说明：告诉搜索引擎你网页的关键字是什么。<br>用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"香蕉,苹果,橘子,梨"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Description (网页描述)<br>说明：Description用来告诉搜索引擎你的网页主要内容。<br>用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"如何变帅，如何变更帅、变帅的一百另一种方法，变帅让世界更美好。"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Robots (机器人向导)<br>说明：Robots用来告诉搜索机器人哪些页面需要索引，哪些页面不需要索引。Content的参数有all、none、index、noindex、follow、nofollow。默认是all。<br>用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"All|None|Index|Noindex|Follow|Nofollow"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p> all：文件将被检索，且页面上的链接可以被查询；<br> none：文件将不被检索，且页面上的链接不可以被查询；(和 “noindex, no follow” 起相同作用)<br> index：文件将被检索；（让robot/spider登录）<br> follow：页面上的链接可以被查询；<br> noindex：文件将不被检索，但页面上的链接可以被查询；(不让robot/spider登录)<br> nofollow：文件将不被检索，页面上的链接可以被查询。(不让robot/spider顺着此页的连接往下探找)</p>
+</li>
+<li><p>Author (作者)<br>说明：标注网页的作者或制作组<br>用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"author"</span> <span class="attr">content</span>=<span class="string">"天下第一帅，wohenshuai@shauige.com"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 注意：Content可以是：你或你的制作组的名字,或Email</p>
+</li>
+<li><p>Copyright (版权)<br>说明：标注版权<br>用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"copyright"</span> <span class="attr">content</span>=<span class="string">"本网站版权归权天下所有的帅哥所有"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Generator (编辑器)<br>说明：编辑器的说明<br>用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"generator"</span> <span class="attr">content</span>=<span class="string">"PCDATA|FrontPage|"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p> 注意：Content=”你所用编辑器”</p>
+</li>
+<li><p>Revisit-after (重访)<br>说明：通知搜索引擎多少天访问一次<br>用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"revisit-after"</span> <span class="attr">content</span>=<span class="string">"7 days"</span> &gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="meta元素的charset属性"><a href="#meta元素的charset属性" class="headerlink" title="meta元素的charset属性"></a>meta元素的charset属性</h4><p>说明： charset声明字符的编码格式<br>用法：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>   //声明字符的编码格式</span><br></pre></td></tr></table></figure></p>
+<h4 id="meta的http-equiv属性"><a href="#meta的http-equiv属性" class="headerlink" title="meta的http-equiv属性"></a>meta的http-equiv属性</h4><p>1.<br>说明：在指定的时间里刷新页面（如果在时间后面添加上一个URL，则是在指定的时间之后另外再载入一个页面）<br>   用法：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"refresh"</span> <span class="attr">content</span>=<span class="string">"10"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>2.<br>说明：指定页面的优先使用样式表，对应的content属性值应该和同一文档中style元素和link元素的title属性值相同<br>用法：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"default-style"</span> <span class="attr">content</span>=<span class="string">"css1"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>3.<br>    说明：另一种指定文档编码方式的方法<br>    用法：<br>    <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html charset=utf-8"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="meta的lang属性"><a href="#meta的lang属性" class="headerlink" title="meta的lang属性"></a>meta的lang属性</h4><p>说明：meta元素的lang属性用来定义content属性值的语言，这样的目的主要是用于语音合成器可以区分出content属性值所使用的语言，从而可以读出来。<br>lang属性可以指定标签范围内的元素的语言种类。英语lang=”en”,中文lang=”zh”，日文lang=”ja”。<br>dir属性用来定义文字的方向值,ltr是默认。从左向右的文本方向。rtl从右向左的文本方向。<br>用法：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"Author"</span> <span class="attr">content</span>=<span class="string">"dreamzuora"</span> <span class="attr">lang</span>=<span class="string">"US-en"</span> <span class="attr">dir</span>=<span class="string">"LTR"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="移动端的viewport属性"><a href="#移动端的viewport属性" class="headerlink" title="移动端的viewport属性"></a>移动端的viewport属性</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span>  </span></span><br><span class="line"><span class="tag"><span class="attr">content</span>=<span class="string">"  </span></span></span><br><span class="line"><span class="tag"><span class="string">    height = [pixel_value | device-height] ,  </span></span></span><br><span class="line"><span class="tag"><span class="string">    width = [pixel_value | device-width ] ,  </span></span></span><br><span class="line"><span class="tag"><span class="string">    initial-scale = float_value ,  </span></span></span><br><span class="line"><span class="tag"><span class="string">    minimum-scale = float_value ,  </span></span></span><br><span class="line"><span class="tag"><span class="string">    maximum-scale = float_value ,  </span></span></span><br><span class="line"><span class="tag"><span class="string">    user-scalable = [yes | no] ,  </span></span></span><br><span class="line"><span class="tag"><span class="string">    target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi]  </span></span></span><br><span class="line"><span class="tag"><span class="string">"</span>  </span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>含义如下：</p>
+<p><strong>width:</strong></p>
+<p>控制 viewport 的大小，可以指定的一个值或者特殊的值，如 device-width 为设备的宽度（单位为缩放为 100% 时的 CSS 的像素）。</p>
+<p><strong>height:</strong></p>
+<p>和 width 相对应，指定视窗的高度。</p>
+<p><strong>target-densitydpi:</strong></p>
+<p>一个屏幕像素密度是由屏幕分辨率决定的，通常定义为每英寸点的数量（dpi）。Android支持三种屏幕像素密度：低像素密度，中像素密度，高像素密度。一个低像素密度的屏幕每英寸上的像素点更少，而一个高像素密度的屏幕每英寸上的像素点更多。Android Browser和WebView默认屏幕为中像素密度。</p>
+<p>下面是 target-densitydpi 属性的 取值范围</p>
+<pre><code>device-dpi –使用设备原本的 dpi 作为目标 dp。 不会发生默认缩放。
+high-dpi – 使用hdpi 作为目标 dpi。 中等像素密度和低像素密度设备相应缩小。
+medium-dpi – 使用mdpi作为目标 dpi。 高像素密度设备相应放大， 像素密度设备相应缩小。 这是默认的target density.
+low-dpi -使用mdpi作为目标 dpi。中等像素密度和高像素密度设备相应放大。
+&lt;value&gt; – 指定一个具体的dpi 值作为target dpi. 这个值的范围必须在70–400之间。
+</code></pre><p>为了防止Android Browser和WebView 根据不同屏幕的像素密度对你的页面进行缩放，你可以将viewport的target-densitydpi 设置为 device-dpi。当你这么做了，页面将不会缩放。相反，页面会根据当前屏幕的像素密度进行展示。在这种情形下，你还需要将viewport的width定义为与设备的width匹配，这样你的页面就可以和屏幕相适应。</p>
+<p><strong>initial-scale:</strong></p>
+<p>初始缩放。即页面初始缩放程度。这是一个浮点值，是页面大小的一个乘数。例如，如果你设置初始缩放为“1.0”，那么，web页面在展现的时候就会以target density分辨率的1:1来展现。如果你设置为“2.0”，那么这个页面就会放大为2倍。</p>
+<p><strong>maximum-scale:</strong></p>
+<p>最大缩放。即允许的最大缩放程度。这也是一个浮点值，用以指出页面大小与屏幕大小相比的最大乘数。例如，如果你将这个值设置为“2.0”，那么这个页面与target size相比，最多能放大2倍。</p>
+<p><strong>user-scalable:</strong></p>
+<p>用户调整缩放。即用户是否能改变页面缩放程度。如果设置为yes则是允许用户对其进行改变，反之为no。默认值是yes。如果你将其设置为no，那么minimum-scale 和 maximum-scale都将被忽略，因为根本不可能缩放。</p>
+<p>所有的缩放值都必须在0.01–10的范围之内。</p>
+<p>例：</p>
+<p>(设置屏幕宽度为设备宽度，禁止用户手动调整缩放)<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,user-scalable=no"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>(设置屏幕密度为高频，中频，低频自动缩放，禁止用户手动调整缩放)<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"</span>/&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>另外，iOS 7.1的Safari为meta标签新增minimal-ui属性，在网页加载时默认隐藏地址栏与导航栏<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"minimal-ui"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>此时点击顶栏区域便能切换为显示地址栏、导航栏，再点击页面主体区域则又使之隐藏。</p>
+<h3 id="title"><a href="#title" class="headerlink" title="title"></a>title</h3><p>作用：设置文档的标题或者名称。浏览器通常将该元素的内容显示在窗口顶部或者标签页上。每个HTML文档只能有一个且必须有一个title元素</p>
+<h3 id="base"><a href="#base" class="headerlink" title="base"></a>base</h3><p>设置文档的默认地址和链接的默认打开方式;<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>base<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">        base - 设置一些默认值</span></span><br><span class="line"><span class="comment">          href - 指定当前文档的默认地址，不指定的话默认地址为当前文档的 url。文档中相对路径的解析后的绝对地址为：默认地址 + 相对路径</span></span><br><span class="line"><span class="comment">          target - 指定文档中链接的默认打开方式。_blank, _parent, _self, _top</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">base</span> <span class="attr">href</span>=<span class="string">"http://pic.cnblogs.com/avatar/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">        a 标签的链接打开方式为 _blank</span></span><br><span class="line"><span class="comment">        img 标签的图片绝对地址为 http://pic.cnblogs.com/avatar/a14540.jpg</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://webabcd.cnblogs.com/"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"a14540.jpg"</span> <span class="attr">alt</span>=<span class="string">"baby"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="link"><a href="#link" class="headerlink" title="link"></a>link</h3><p>局部属性<br>        ：href 指定link元素指向的资源的URL<br>        ：hreflang   说明所光联的资源使用的语言<br>        ：media   指定所关联的内容使用哪种设备<br>        ：rel  说明HTML文档所关联资源的关系类型<br>        ：sizes（这是HTML5新属性）指定关联图标的大小<br>        ：type 指定所关联资源的MIME类型 可以省</p>
+<p>rel属性的可取值 :<br>                 stylesheet  载入外部样式表<br>                 help   链接倒当前文档的说明文档<br>                 author   链接倒当前文档的作者<br>                 prefetch  预先获取一个资源<br>                 icon   指定图标资源</p>
+<h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><p>作用：用来定义HTML文档的内嵌CSS样式<br>局部属性<br>       ：type 由于浏览器只认识css一种机制，所以该值总是 text/css  可以省略<br>       ：media 指定样式适用的媒体，即媒体查询 </p>
+<p>取值：<br>     screen 计算机显示器屏幕<br>     print  打印预览的时候<br>     braill盲文设备<br>     aural  语音合成器<br>     tv电视机（media在使用的时候通常会配合 AND NOT ,一起来配合使用）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">media</span>=<span class="string">"screen AND (max-width:500px)"</span> &gt;</span><span class="xml"><span class="tag">&lt;<span class="name">style</span>/&gt;</span>  /*指的是在PC端 屏幕最大宽度为500px的设备使用，媒体查询多用于响应式网页的制作*/</span></span><br></pre></td></tr></table></figure>
+<p>style元素可以出现在HTML文档的各个部分，一个文档可以包含多个style元素，在使用模板引擎生成页面的情况下这个特性很有帮助，可以用页面特有的样式为模板定义样式提供补充</p>
+<hr>
+<hr>
+<p><strong>参考资料</strong></p>
+<ol>
+<li><a href="https://blog.csdn.net/wangpmy/article/details/62887766" target="_blank" rel="noopener">https://blog.csdn.net/wangpmy/article/details/62887766</a></li>
+<li><a href="https://blog.csdn.net/freshlover/article/details/25322839" target="_blank" rel="noopener">https://blog.csdn.net/freshlover/article/details/25322839</a></li>
+<li><a href="https://www.cnblogs.com/webabcd/archive/2011/09/15/2176955.html" target="_blank" rel="noopener">https://www.cnblogs.com/webabcd/archive/2011/09/15/2176955.html</a></li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
+          
+            <a href="/tags/前端/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
+          
+            <a href="/tags/frontEnd/" rel="tag"><i class="fa fa-tag"></i> frontEnd</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/16/blog3/" rel="next" title="CSS3系列之一：border-radius">
+                <i class="fa fa-chevron-left"></i> CSS3系列之一：border-radius
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/16/blog4/" rel="prev" title="MarkDown的常用语法总结">
+                MarkDown的常用语法总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">SuperGintoki</p>
+              <p class="site-description motion-element" itemprop="description">Talk is cheap,show me your code!</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/supergintoki" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:helloxyy@outlook.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.csdn.net/" title="CSDN" target="_blank">CSDN</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#元数据"><span class="nav-number">1.</span> <span class="nav-text">元数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#meta"><span class="nav-number">1.1.</span> <span class="nav-text">meta</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Meta标签的name和content属性"><span class="nav-number">1.1.1.</span> <span class="nav-text">Meta标签的name和content属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#meta元素的charset属性"><span class="nav-number">1.1.2.</span> <span class="nav-text">meta元素的charset属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#meta的http-equiv属性"><span class="nav-number">1.1.3.</span> <span class="nav-text">meta的http-equiv属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#meta的lang属性"><span class="nav-number">1.1.4.</span> <span class="nav-text">meta的lang属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移动端的viewport属性"><span class="nav-number">1.1.5.</span> <span class="nav-text">移动端的viewport属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#title"><span class="nav-number">1.2.</span> <span class="nav-text">title</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#base"><span class="nav-number">1.3.</span> <span class="nav-text">base</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#link"><span class="nav-number">1.4.</span> <span class="nav-text">link</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#style"><span class="nav-number">1.5.</span> <span class="nav-text">style</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SuperGintoki</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">7.9k</span>
+  
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<!-- 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+  -->
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'SuperGintoki',
+            repo: 'SuperGintoki.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'b522845f301bab8ec33a5202f3acf614e4335206',
+            
+                client_id: 'fee8528afdb3a9d1852b'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
